@@ -9,7 +9,9 @@ const app = express();
 
 const allowedOrigins = [
   'https://ponto-track-40cc3d399503.herokuapp.com',
-  'https://ponto-track-40cc3d399503.herokuapp.com/api/items'
+  'https://ponto-track-40cc3d399503.herokuapp.com/api/items',
+  'http://localhost:3001',
+  'http://localhost:3001/api/items'
 ];
 
 
