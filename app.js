@@ -9,7 +9,8 @@ const app = express();
 
 app.use(cors({
   origin: 'https://ponto-track-40cc3d399503.herokuapp.com/',
-  optionsSuccessStatus: 200
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
 }));
 app.use(bodyParser.json());
 
