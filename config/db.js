@@ -1,10 +1,9 @@
 const { Sequelize } = require('sequelize');
-const process = require('process');
 const path = require('path');
 const fs = require('fs');
 
 const basename = path.basename(__filename);
-const env = process.env.DATABASE_URL|| 'development';
+const env = process.env.NODE_ENV || 'development';
 const config = require('../config/config.json')[env];
 const db = {};
 
@@ -13,6 +12,7 @@ let sequelize;
 if (process.env.DATABASE_URL) {
   sequelize = new Sequelize(process.env.DATABASE_URL, {
     dialect: 'postgres',
+    protocol: 'postgres',
     dialectOptions: {
       ssl: {
         require: true,
