@@ -78,4 +78,4 @@ link heroku
 https://ponto-track-40cc3d399503.herokuapp.com/create
 
 repositório front end
-https://github.com/Biazindev/back-Crud-node.git
+https://github.com/Biazindev/CRUD-nodejs-react-postgree.git
